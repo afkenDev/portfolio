@@ -4,13 +4,59 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>it's me!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="sytle.css">
     </head>
     <body>
-        a
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="home" class="section">
+            <div class="content">
+                <h1>Willkommen zu meinem Portfolio</h1>
+                <p>Ich bin ein IMS-Praktikant mit einer Leidenschaft für Technologie und Design.</p>
+            </div>
+        </section>
+    
+        <section id="about" class="section">
+            <div class="content">
+                <h2>Über mich</h2>
+                <p>Ich bin ein motivierter und engagierter Praktikant mit einem Hintergrund in Informationstechnologie und Mediengestaltung. Ich strebe danach, innovative und benutzerfreundliche Lösungen zu entwickeln.</p>
+            </div>
+        </section>
+    
+        <section id="projects" class="section">
+            <div class="content">
+                <h2>Projekte</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>Projekt 1</h3>
+                        <p>Beschreibung des ersten Projekts.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Projekt 2</h3>
+                        <p>Beschreibung des zweiten Projekts.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Projekt 3</h3>
+                        <p>Beschreibung des dritten Projekts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2024 IMS Praktikanten Portfolio</p>
+        </footer>
         
         <script type="text/javascript" src="{{ url_for('static', filename='script.js')}}" async defer></script>
     </body>
