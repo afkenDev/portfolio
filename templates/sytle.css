@@ -8,11 +8,14 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
-
 header {
+    position: fixed; 
     background-color: #333;
-    padding: 10px 0;
+    padding: 1px 0;
+    width: 100%;
+    
 }
+
 
 nav ul {
     display: flex;
@@ -76,4 +79,67 @@ footer {
     padding: 20px;
     background-color: #333;
     color: white;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.project-item {
+    display: none;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+.dots-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.github-button, .main-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.github-button:hover {
+    background-color: #304c7e;
+    transform: scale(1.04);
+}
+
+.main-button {
+    font-size:larger !important;
 }
