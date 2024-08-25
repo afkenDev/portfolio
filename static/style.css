@@ -71,7 +71,8 @@ p {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 footer {
@@ -134,6 +135,7 @@ footer {
     font-size: 16px;
     transition: background-color 0.3s, transform 0.3s;
     height: 97%;
+    
 }
 
 .github-button:hover {
@@ -141,6 +143,119 @@ footer {
     transform: scale(1.041);
 }
 
-.main-button {
+.main-button{
     font-size:larger !important;
+    margin-top: 0.1rem;
+}
+#github {
+    margin-top: 0.2rem;
+}
+
+
+#home h1 {
+    margin-top: 30%;
+}
+
+
+
+h1, h2 { 
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-size: 200%
+}
+
+h3 {
+    font-family:Comic Sans MS, Comic Sans, cursive;
+
+}
+
+
+
+p, a {
+    font-family: Open Sans, sans-serif;
+    font-size: large;
+}
+
+.mail-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #304c7e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mail-button svg {
+    margin-right: 8px;
+}
+
+.mail-button:hover {
+    background-color: #0056b3;
+}
+.hobby-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.hobby-item {
+    text-align: center;
+}
+
+.hobby-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.profile-image {
+    width: 200px; /* Breite des Bildes anpassen */
+    height: auto; /* Automatische Höhe basierend auf der Breite */
+    border-radius: 8px; /* Leicht abgerundete Ecken */
+
+}
+
+.text-content {
+    flex: 1; /* Textbereich nimmt den verbleibenden Platz ein */
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.hobby-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.hobby-item img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.project-item img {
+    width: 100%; /* Bild auf die Container-Breite skalieren */
+    height: auto; /* Höhe automatisch anpassen */
+    object-fit: cover; /* Bild zuschneiden, um den Container zu füllen */
 }
