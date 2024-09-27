@@ -4,13 +4,108 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>it's me!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="sytle.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">   
     </head>
     <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="main-button">Kenz Abdelkebir</a>
+                    <li><a href="#home" class="github-button">Home</a ></li>
+                    <li><a href="#about" class="github-button">About</a></li>
+                    <li><a href="#projects" class="github-button">Projects</a></li>
+                    <a href="https://github.com/afkenDev" target="_blank" class="github-button" id="github" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="#fff" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.11.793-.26.793-.577 0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.746.083-.73.083-.73 1.204.085 1.836 1.235 1.836 1.235 1.07 1.833 2.806 1.303 3.492.996.108-.776.42-1.303.763-1.603-2.665-.304-5.466-1.334-5.466-5.93 0-1.31.468-2.382 1.235-3.222-.124-.304-.536-1.527.117-3.18 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.29-1.553 3.297-1.23 3.297-1.23.655 1.653.243 2.876.12 3.18.77.84 1.233 1.912 1.233 3.222 0 4.61-2.805 5.624-5.475 5.92.43.373.823 1.103.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .32.19.693.8.575C20.565 21.796 24 17.297 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a> 
+                </ul>
+                           
+            </nav>
+        </header>
+    
+        <section id="home" class="section">
+            <div class="content">
+                <h1>hallo, hier ist <span style="color:#304c7e;">kenz</span></h1>
+                <p>Ich bin ein Entwickler aus Zürich, Schweiz, mit einer Leidenschaft für Apps, die durch ihren großen Einfluss und ihre innovativen Ansätze beeindrucken. Es fasziniert mich, wie Technologie unsere Welt verändern kann, und ich strebe danach, mit meiner Arbeit bedeutende Innovationen voranzutreiben.</p>
+                <a href="mailto:kenzo.abdelkebir@gmail.com" class="mail-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16" >
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.852L0 4.697zM6.761 8.83l-6.2 4.117A2 2 0 0 0 2 14h12a2 2 0 0 0 1.439-.554l-6.2-4.117L8 9.586l-.239-.757zM16 4.697l-5.803 3.852L16 11.801V4.697z"/>
+                    </svg>
+                    say, hi!
+                </a>
+            </div>
+        </section>
+    
+        <section id="about" class="section">
+            <div class="content">
+                <h2>Über mich</h2>
+                <div class="about-content">
+                    <div class="text-content">
+                        <p>Ich befinde mich im dritten Jahr der Informatikmittelschule mit Schwerpunkt Applikationsentwicklung und freue mich darauf, meine fundierten Kenntnisse und Fähigkeiten der letzten Jahre im bevorstehenden Praxisjahr einzusetzen und weiterzuentwickeln.</p>
+                        
+                        <h3>Hobbys</h3>
+                        <div class="hobby-list">
+                            <div class="hobby-item">
+                     
+                                <p>Motorrad fahren</p>
+                            </div>
+                            <div class="hobby-item">
+               
+                                <p>Gym</p>
+                            </div>
+                            <div class="hobby-item">
+                                
+                                <p>Fußball gucken</p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <img src="static/aa.jpg" alt="Mein Bild" class="profile-image" />
+                </div>
+                <h3>Meine Musik</h3>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/72vOg9a2bDhdqYjJRArPDY?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </section>
         
+    
+        <section id="projects" class="section">
+            <div class="content">
+                <h2>Projekte</h2>
+                <div class="slideshow-container">
+                    <div class="project-item fade">
+                        <img src="static/bb.png" alt="Projekt 1" class="project-image" />
+                        <h3>Urlaubbsversicherungsrechner</h3>
+                        <p>Webapplikation mit React, wo man eine Prämie für einen versicherten Urlaub berechnen lassen kann. Geben Sie einfach die Details Ihrer Reise ein, und erhalten Sie in Echtzeit eine transparente Übersicht über die Versicherungskosten. Die benutzerfreundliche Oberfläche und die schnelle Berechnung machen es leicht die App zu bedienen.</p>
+                    </div>
+                    <div class="project-item fade">
+                        <img src="static/cc.png" alt="Projekt 2" class="project-image" />
+                        <h3>Top-Down Game</h3>
+                        <p>Ein Roblox-Spiel, in dem du dein eigenes Büro aufbauen kannst, erstellt mit Lua. Dies ist einer meiner vielen Versuche, ein Roblox-Spiel zu entwickeln.</p>
+                    </div>
+                    <div class="project-item fade">
+                        <img src="static/dd.png" alt="Projekt 3" class="project-image" />
+                        <h3>Memory</h3>
+                        <p>Webapplikation mit React, wo man Memory spielen kann, so simple!</p>
+                    </div>
+                </div>
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+        
+        
+    
+        <footer>
+            <p>&copy; 2024 IMS Kenz Abdelkebir Portfolio</p>
+        </footer>
         
         <script type="text/javascript" src="{{ url_for('static', filename='script.js')}}" async defer></script>
     </body>
