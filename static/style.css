@@ -34,10 +34,10 @@ nav ul li a {
 }
 
 .section {
-    padding: 60px 20px;
-    height: 100vh;
+    padding: 80px 20px;
+    padding-top: 130px; 
+    min-height: 100vh;  
 }
-
 .section:nth-child(odd) {
     background-color: #f4f4f4;
 }
@@ -195,21 +195,6 @@ p, a {
 .mail-button:hover {
     background-color: #0056b3;
 }
-.hobby-list {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.hobby-item {
-    text-align: center;
-}
-
-.hobby-item img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
 
 h3 {
     margin-top: 30px;
@@ -233,14 +218,15 @@ h3 {
 
 .hobby-list {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .hobby-item {
-    text-align: center;
-    margin: 10px;
+    text-align:center;
+    margin: 10px 10px;
 }
 
 .hobby-item img {
@@ -258,4 +244,257 @@ h3 {
     width: 100%; /* Bild auf die Container-Breite skalieren */
     height: auto; /* Höhe automatisch anpassen */
     object-fit: cover; /* Bild zuschneiden, um den Container zu füllen */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    background-color: #333;
+    padding: 1px 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 20px;
+    height: 100vh;
+}
+
+.section:nth-child(odd) {
+    background-color: #f4f4f4;
+}
+
+.section:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.project-item {
+    display: none;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.dots-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Buttons */
+.github-button, .main-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.github-button:hover {
+    background-color: #304c7e;
+    transform: scale(1.05);
+}
+
+.main-button {
+    font-size: larger !important;
+    margin-top: 0.1rem;
+}
+
+h1, h2 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 200%;
+}
+
+h3 {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+p, a {
+    font-family: Open Sans, sans-serif;
+    font-size: large;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.hobby-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.hobby-item img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 986px) {
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    .profile-image {
+        width: 120px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    #disap {
+        display: none !important;
+    }
+}
+
+@media (max-width: 538px) {
+    header {
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul {
+        padding: 5px;
+    }
+
+    h1, h2 {
+        font-size: 1.6rem;
+    }
+
+    .github-button, .main-button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .section {
+        padding: 60px 10px;
+    }
 }
