@@ -10,3 +10,4 @@ TO START:
 
 for adding requirements use "pip install -r requirements.txt"
 
+alternative static -> https://afkendev.github.io/portfolio/
