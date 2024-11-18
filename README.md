@@ -1,4 +1,4 @@
-# portfolio
+# dynamic portfolio
 
 https://portfolio-brown-five-28.vercel.app/
 
@@ -9,3 +9,7 @@ TO START:
 `./app.py`
 
 for adding requirements use "pip freeze > requirements.txt"
+
+
+--- 
+FOR USING STATIC e.g. Github Pages ➡️ **[https://afkenDev.github.io/portfolio/](https://afkenDev.github.io/portfolio/)**
